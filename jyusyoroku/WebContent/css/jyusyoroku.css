@@ -1,0 +1,224 @@
+@charset "UTF-8";
+
+a {
+  text-decoration: none;
+}
+
+header, footer {
+  background-color: #EEEEEE;
+  height: auto;
+  padding-bottom: 20px;
+  min-height: 120px;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  width: 30%;
+  float: right;
+}
+
+.search-submit {
+  /*margin-left: 11%;*/
+}
+
+.clear {
+  clear: both;
+}
+
+.main {
+  margin: 20px auto;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+input {
+  width: 80%;
+  font-size: 15px;
+  box-sizing: border-box;
+  border: 1px solid #dee7ec;
+}
+
+.submitform {
+  width: 40%;
+  max-width: 100px;
+}
+
+.edit {
+  width: 100%;
+  height: 100%;
+}
+
+.delete {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.btn {
+  color: #000000;
+  display:inline-block;
+  width: 40%;
+  width:100px;
+  text-align:center;
+  border: 1px solid #000000;
+  background-color: #F0F0F0;
+}
+
+.add {
+  margin: 20px;
+}
+
+.back {
+  font-size: 15px;
+  border: 1px solid #dee7ec;
+  /*margin: 0 auto 0 50px;*/
+  width: 40%;
+  height: 100%;
+  max-width: 100px;
+}
+
+
+.table-address-book-list {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+}
+
+th, td {
+  border: solid 1px #000000;
+}
+
+th {
+  background-color: #99C;
+}
+
+.th-no {
+  width: 10%;
+}
+
+.th-name {
+  width: 30%;
+}
+
+.th-address {
+  width: 20%;
+  max-width: 200px;
+}
+
+.th-tel {
+  width: 20%;
+}
+
+.th-category {
+  width: 10%;
+}
+
+.th-edit-delete {
+  width: 10%;
+}
+
+/*住所録一覧表(table-address-book-list)の住所列*/
+.address-data {
+   position: relative;
+   width: 100%;
+   max-width: 100%;
+   overflow: hidden;
+   /*3点リーダ*/
+   text-overflow: ellipsis;
+   white-space: nowrap;
+}
+
+.mouse-over-address-data {
+  display: none;
+  position: absolute;
+  background: #99C;
+  color: #fff;
+  z-index: 2;
+}
+
+.address-data:hover + .mouse-over-address-data {
+  display: block;
+}
+
+/*ページネーション*/
+.pagenation {
+  height: auto;
+  padding: 20px;
+  background-color: #BBBBBB;
+}
+
+.pagenation ul {
+  font-size: 0px;
+
+}
+
+.pagenation li {
+  display: inline-block;
+  width: 40px;
+  font-size: 20px;
+  margin: 0 2px;
+  text-align: center;
+}
+
+.pagenation .current-page {
+  background-color: #777777;
+}
+
+.pagenation a {
+  display: block;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.pagenation a:hover {
+  background-color: #9999CC;
+  color: #3333CC;
+}
+
+.footer-left {
+  float: left;
+}
+
+.required-item-mark {
+  color: #FF0000;
+}
+
+.error-message {
+  color: #FF0000;
+}
+
+.item-name {
+  display: inline-block;
+  width: 10%;
+}
+
+.item-value {
+  display: inline-block;
+  width: 90%;
+}
+
+.form-label {
+  display: inline-block;
+  width: 10%;
+}
+
+.form-part {
+  display: inline-block;
+  width: 90%;
+}
+
+.buttons {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 0 auto;
+  float: left;
+  margin: 20px auto;
+}
