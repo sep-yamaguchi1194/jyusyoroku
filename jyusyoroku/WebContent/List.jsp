@@ -108,7 +108,10 @@ String SearchName = "";
   maxPage = listCnt / 10;
 
   if(maxPage == 0) maxPage = 1;
-  if(!(listCnt % 10 == 0)) maxPage += 1 ;
+  //10件に満たない端数分のページ数追加処理
+  if(maxPage != 1) {
+    if(!(listCnt % 10 == 0)) maxPage += 1 ;
+  }
 
   if(request.getAttribute("SearchName") != null) {
     SearchName = request.getAttribute("SearchName").toString();
